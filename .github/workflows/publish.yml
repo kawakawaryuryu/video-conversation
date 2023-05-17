@@ -1,6 +1,8 @@
 name: publish_ecr
 on:
   push:
+    branches:
+      - main
 jobs:
   publish_to_ecr:
     runs-on: ubuntu-latest
